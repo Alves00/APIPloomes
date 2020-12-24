@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJTGTKmuaP0ujh0XmNsgbHAAAAAACAAAAAAAQZgAAAAEAACAAAAA50Ak5uZkllVvrs/oKzJYAaJ1q20P9CCFZP1ZOkXIHOgAAAAAOgAAAAAIAACAAAACDK3K2v46gMB8ZpV6IZy5knT6w/Opj4zA79jfE2ap1HoAAAABIlU8NBat3WlIo0IkzO9D7y+xhfXl0fsIGLuhbyvKLTcqqE79JqcK4wbww1j5BpZ21wP4KaOmREdX75YWuefiu7GD1qIBb0L8VwJ0l9yUWYlplOZztuCEMmWNQ/wt2WjRKH9IGb6+POtIbXP2b+VMKZgiQ0nYZWeYIGeVxv/v/oEAAAADJiqFOqh8/dW1i0qiPB7IKf58YCIq6pbbQ3lnA4PYXspJN/B6lsy0F3lErlvIVGKmR15Z4QpbEiDoXjxjegHmD</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ConnDB">
+      <Value>Data Source=tcp:apiploomesdb.database.windows.net,1433%3bInitial Catalog=Ploomes_db%3bUser Id=malves%40apiploomesdb%3bPassword=3296theus%40</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="testPloomes.Data.BancoContext">
+      <Value>Data Source=tcp:apiploomesdb.database.windows.net,1433%3bInitial Catalog=Ploomes_db%3bUser Id=malves%40apiploomesdb%3bPassword=3296theus%40</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
